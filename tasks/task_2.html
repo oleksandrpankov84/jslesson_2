@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 2</title>
+</head>
+<body>
+	<header>
+		<a href="../index.html">Головна /</a><a href="./task_2.html">Задача 2</a>
+	</header>
+	<main>
+		<h1>Задача 2. Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.</h1>
+		<script>
+			// введення даних
+			let year=parseInt(prompt('введить ріе народження','0000'))
+			// Розв`язок
+			let nowyear=new Date().getFullYear()
+			let age=nowyear-year
+			// Вивід даних
+			document.write(`
+			<table border=1px>
+				<tr>
+              <th>Шуканий результат</th>
+              <th>Отримане значення</th>
+          	</tr>
+				<tr>
+				<th>Кількість років</th>
+				<td>${age}</td>
+				</tr>
+			</table>`)
+		</script>
+	</main>
+</body>
+</html>

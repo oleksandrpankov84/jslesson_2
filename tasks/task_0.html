@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 0</title>
+</head>
+<body>
+	<header>
+		<a href="../index.html">Головна /</a><a href="./task_0.html">Задача 0</a>
+	</header>
+	<h1>Задача 0</h1>
+	<p>Обчислення значень:</p>
+	<p>S1=a+12+b</p>
+	<p>S2=√((a+b)/(2*a))</p>
+	<p>S3=3√((a+b)*c)</p>
+	<p>S4=sin(a/-b)</p>
+	<h2>Вивелення результату:</h2>
+	<script>
+		// Введення значень
+		let a =parseFloat(prompt('Введить значення a','значення а'))
+		let b =parseFloat(prompt('Введить значення b','значення b'))
+		let c =parseFloat(prompt('Введить значення c','значення с'))
+		// Розв`язок
+		let s1=a+12+b
+		let s2=Math.sqrt((a+b)/(2*a))
+		let s3=Math.cbrt((a+b)*2)
+		let s4=Math.sin(a/(-b))
+		// Виводимо результат
+		document.write(`<table border=1px>
+				<tr>
+              <th>Шуканий результат</th>
+              <th>Отримане значення</th>
+          	</tr>
+				<tr>
+					<th>S1</th>
+					<td>${s1}</td>
+				</tr>
+				<tr>
+					<th>S2</th>
+					<td>${s2.toFixed(2)}</td>
+				</tr>
+				<tr>
+					<th>S3</th>
+					<td>${s3.toFixed(2)}</td>
+				</tr>
+				<tr>
+					<th>S3</th>
+					<td>${s3.toFixed(2)}</td>
+				</tr>
+				<tr>
+					<th>S4</th>
+					<td>${s4.toFixed(2)}</td>
+				</tr>
+			</table>`)
+		</script>
+
+</body>
+</html>
